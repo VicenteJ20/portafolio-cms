@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Fira_Sans } from 'next/font/google'
 import './globals.css'
 import { NavbarWrapper } from '../components/Navbar/Wrapper'
 
-const inter = Inter({ subsets: ['latin'] })
+const FiraSans = Fira_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={FiraSans.className}>
         <NavbarWrapper />
         <main className='p-4'>
           <div className='max-w-7xl mx-auto py-20'>
