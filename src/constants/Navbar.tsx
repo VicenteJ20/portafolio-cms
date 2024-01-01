@@ -20,6 +20,7 @@ const NAVBAR_PAGES = [
     title: 'Sobre mí',
     url: '/sobre-mi',
   },
+  
 ]
 
 const CONTACT_BTN = {
