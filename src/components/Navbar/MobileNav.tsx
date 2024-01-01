@@ -65,7 +65,7 @@ const MobileNav = ({ open, setOpen }: { open: boolean, setOpen: any }) => {
                   onClick={() => setOpen(!open)}
                 >
                   <Link
-                    href={item.href} className={`text-stone-500 font-normal hover:text-[${item.highlight_color}]`} >
+                    href={item.href} className={`text-stone-500 font-normal hover:text-[${item.highlight_color}]`} target='_blank'>
                     {item.icon ? item.icon : item.title}
                   </Link>
                 </motion.li>
