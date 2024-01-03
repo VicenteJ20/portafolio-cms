@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Header = ({ title, overtitle, description }: HeaderProps) => {
   return (
     <motion.header
-      className='flex flex-col gap-4'
+      className='flex flex-col gap-2'
     >
       <motion.h3
         className='font-semibold text-lime-600'>{overtitle}</motion.h3>
@@ -15,7 +15,7 @@ const Header = ({ title, overtitle, description }: HeaderProps) => {
         {title}
       </motion.h2>
       <motion.p
-        className='text-lg lg:text-xl text-stone-700'
+        className='text-lg text-stone-700'
       >
         {description}
       </motion.p>

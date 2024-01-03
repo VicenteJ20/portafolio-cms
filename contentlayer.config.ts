@@ -3,7 +3,7 @@ import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
-  filePathPattern: `**/*.md`,
+  filePathPattern: `**/**/**/*.md`,
   fields: {
     title: {
       type: 'string',
@@ -14,6 +14,14 @@ export const Post = defineDocumentType(() => ({
       required: true,
     },
     author: {
+      type: 'string',
+      required: true,
+    },
+    coverImage: {
+      type: 'string',
+      required: true,
+    },
+    description: {
       type: 'string',
       required: true,
     }

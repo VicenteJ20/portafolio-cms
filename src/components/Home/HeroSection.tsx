@@ -7,8 +7,8 @@ import Link from "next/link"
 const HeroSectionPage = () => {
 
   return (
-    <motion.section className='max-w-7xl h-screen lg:h-auto mx-auto py-32 lg:py-44 xl:py-72 flex flex-col lg:flex-row gap-12 text-start items-center justify-center lg:justify-between'>
-      <motion.header className='flex flex-col gap-5 px-4 lg:px-0 lg:max-w-[75%] text-center lg:text-start'>
+    <motion.section className='max-w-7xl h-screen lg:h-auto mx-auto py-32 lg:py-44 xl:py-72 flex flex-col lg:flex-row gap-12 text-start items-center justify-center lg:justify-between px-4'>
+      <motion.header className='flex flex-col gap-5 lg:max-w-[75%] text-center lg:text-start'>
         <motion.h3 className='text-xl font-semibold text-lime-600'>
           Hola, soy Vicente
         </motion.h3>

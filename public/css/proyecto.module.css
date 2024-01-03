@@ -1,0 +1,125 @@
+.main_post img:nth-child(1){
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.main_post h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #334155;
+  text-align: center;
+}
+
+.main_post ul:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.4rem;
+  color: #606F7B;
+  list-style-type: none;
+  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_post ul:nth-of-type(2) {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto 2rem auto;
+  gap: 1rem;
+  list-style: none;
+}
+
+.main_post ul:nth-of-type(2) > li {
+  background-color: whitesmoke;
+  border-radius: 30rem;
+  color: #161c24;
+  border: 1px solid #272a36;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.main_post ul:nth-of-type(2) > li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #334155;
+  text-decoration: none;
+}
+
+.main_post ul:nth-of-type(2) > li:hover {
+  background-color: #20232e;
+  border: 1px solid #334155;
+  scale: 1.1;
+}
+
+.main_post ul:nth-of-type(2) > li:active {
+  scale: 0.9;
+}
+
+.main_post ul:nth-of-type(2) > li:hover > a {
+  color: #fafafa;
+}
+
+.main_post h5 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #1a212b;
+  text-align: center;
+}
+
+.main_post ul:first-of-type li:nth-child(1)::before {
+  content: 'Autor: '
+}
+
+.main_post ul {
+  list-style-type: disc;
+  padding: 0 0 0 2rem;
+}
+
+.main_post h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #1a212b;
+}
+
+.main_post h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #1a212b;
+}
+
+.main_post h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #1a212b;
+}
+
+@media only screen and (min-width: 768px) {
+  .main_post img:nth-child(1){
+    max-height: 35rem;
+  }
+  .main_post ul:nth-of-type(2) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main_post ul:nth-of-type(2) > li {
+    font-size: 1.125rem;
+  }
+}
