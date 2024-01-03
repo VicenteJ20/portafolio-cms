@@ -17,7 +17,7 @@ const NavbarWrapper = () => {
 
   return (
     <section className={
-      `fixed top-0 left-0 right-0 ${open ? 'h-screen' : ''} md:max-h-20 p-4 bg-white bg-opacity-25 backdrop-blur-md border-b border-stone-200`
+      `fixed top-0 left-0 right-0 ${open ? 'h-screen' : ''} md:max-h-20 p-4 bg-white bg-opacity-75 backdrop-blur-md border-b border-zinc-200`
     }>
       <motion.nav
         transition={{ duration: 0.5 }}
@@ -25,7 +25,7 @@ const NavbarWrapper = () => {
       >
         <motion.h2
           whileHover={{ scale: 1.050 }}
-          className='font-bold text-xl text-stone-800 w-fit'>
+          className='font-bold text-xl text-zinc-900 w-fit'>
           <Link href={BRAND.url}>{BRAND.title}</Link>
         </motion.h2>
         <motion.ul
@@ -43,7 +43,7 @@ const NavbarWrapper = () => {
                 whileFocus={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Link href={item.url} className='text-stone-500 hover:text-stone-800 hover:scale-110 font-normal'>
+                <Link href={item.url} className='text-zinc-500 hover:text-zinc-900 hover:scale-110 font-normal'>
                   {item.title}
                 </Link>
               </motion.li>
@@ -53,14 +53,14 @@ const NavbarWrapper = () => {
         <MobileNav open={open} setOpen={setOpen} />
         <motion.button type='button'
           whileHover={{
-            backgroundColor: '#1E293B',
+            backgroundColor: '#166534',
           }}
           whileTap={{
             scale: 0.9,
-            backgroundColor: '#1E293B',
+            backgroundColor: '#166534',
           }}
           className={
-            `bg-[#475569] text-white font-semibold px-4 py-2 rounded-md hidden md:block`
+            `bg-[#16A34A] text-white font-semibold px-4 py-2 rounded-md hidden md:block`
           }
           onClick={() => router.push(CONTACT_BTN.url)}>
           {CONTACT_BTN.title}

@@ -1,9 +1,15 @@
 import type { Metadata } from 'next'
 import { Fira_Sans } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import { NavbarWrapper } from '../components/Navbar/Wrapper'
 
 const FiraSans = Fira_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+
+const Vercetti = localFont({
+  src: '/fonts/Vercetti-Regular.ttf',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -23,12 +29,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={FiraSans.className}>
+      <body className={`${Vercetti.className} bg-[#ffffff]`}>
         <NavbarWrapper />
-        <main className='p-4'>
-          <div className='max-w-7xl mx-auto py-20'>
+        <main>
+          <section>
             {children}
-          </div>
+          </section>
         </main>
       </body>
     </html>

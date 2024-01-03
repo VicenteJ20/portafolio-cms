@@ -1,7 +1,13 @@
-import Image from 'next/image'
+import { HeroSectionPage } from "@/components/Home/HeroSection";
+import { HowCanIHelpSection } from "@/components/Home/HowCanIHelp";
+import { RecentProjectsSection } from "@/components/Home/RecentProjects";
 
 export default function Home() {
   return (
-    <h2>Initial page</h2>
+    <>
+      <HeroSectionPage />
+      <HowCanIHelpSection />
+      <RecentProjectsSection />
+    </>
   )
 }
