@@ -7,6 +7,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'www.vicentejorquera.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
       }
     ]
   }

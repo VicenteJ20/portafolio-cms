@@ -6,17 +6,17 @@ description: Este proyecto fue desarrollado por Vicente Jorquera durante sus ini
 coverImage: https://www.vicentejorquera.dev/_next/image?url=%2Fprojects%2Fthumbnails%2Fcalculadora-mockup.webp&w=1200&q=75
 ---
 
-![HOME IMAGE](https://www.vicentejorquera.dev/_next/image?url=%2Fprojects%2Fthumbnails%2Fcalculadora-mockup.webp&w=1200&q=75)
-
-# Calculadora responsive básica
+# Aplicación web - Calculadora aritmética con soporte para temas
 
 - Vicente Jorquera
 - 2022-03-20
 
+![HOME IMAGE](https://www.vicentejorquera.dev/_next/image?url=%2Fprojects%2Fthumbnails%2Fcalculadora-mockup.webp&w=1200&q=75)
+
 ##### Esta app consiste en una aplicación web que desarrollé cuando estaba comenzando a aprender desarrollo web con frameworks de javascript. En este caso escogí Bootstrap y ViteJS, el proyecto tiene como objetivo realizar operaciones de aritmética básica, además de adaptarse a pantallas pequeñas y grandes. Por último, también cuenta con una opción en modo switch que permite al usuario cambiar entre 3 temas diferentes.
 
 - [Ir a la web](https://jvicente20-calculator-app.netlify.app/)
-- [Ir al repositorio](http://www.google.com)
+- [Ir al repositorio](https://github.com/VicenteJ20/100daysofcode/tree/main/FontEnd_Mentor/calculator-app)
 
 ## Requisitos del proyecto
 
@@ -37,3 +37,7 @@ En [FrontendMentor.io](https://www.frontendmentor.io/) se da la libertad a los d
 Como mencioné anteriormente, FrontendMentor permite utilizar cualquier tecnología adicional que permita utilizar las tecnologías base requeridas. En este caso decidí utilizar ViteJS, un Framework de JS que permite utilizar React .
 
 ## Galería de Imágenes
+
+- ![Desktop tema principal](https://www.vicentejorquera.dev/images/darkthemecalc.webp)
+- ![Desktop tema secundario](https://www.vicentejorquera.dev/images/lighttheme.webp)
+- ![Desktop tema terciario](https://www.vicentejorquera.dev/images/prupletheme.png)

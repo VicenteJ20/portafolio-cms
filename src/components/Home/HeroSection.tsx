@@ -7,13 +7,13 @@ import Link from "next/link"
 const HeroSectionPage = () => {
 
   return (
-    <motion.section className='max-w-7xl h-screen lg:h-auto mx-auto py-32 lg:py-44 xl:py-72 flex flex-col lg:flex-row gap-12 text-start items-center justify-center lg:justify-between px-4'>
+    <motion.section className='max-w-7xl h-screen lg:h-auto mx-auto py-36 xl:pt-64 xl:pb-32 flex flex-col lg:flex-row gap-12 text-start items-center justify-center lg:justify-between px-4'>
       <motion.header className='flex flex-col gap-5 lg:max-w-[75%] text-center lg:text-start'>
         <motion.h3 className='text-xl font-semibold text-lime-600'>
           Hola, soy Vicente
         </motion.h3>
 
-        <motion.h1 className='text-3xl xl:text-5xl font-semibold text-slate-700'>
+        <motion.h1 className='text-3xl lg:text-5xl font-semibold text-slate-700'>
           Desarrollador full-stack<br />e Ingeniero en Informática.
         </motion.h1>
         <motion.p

@@ -1,6 +1,7 @@
 import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import styles from '../../../../public/css/proyecto.module.css'
+import { SiWhatsapp } from 'react-icons/si'
 
 export const generateStaticParams = async () => allPosts.map((post: any) => ({ slug: post._raw.flattenedPath }))
 
