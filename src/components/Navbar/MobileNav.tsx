@@ -44,6 +44,7 @@ const MobileNav = ({ open, setOpen }: { open: boolean, setOpen: any }) => {
           whileHover={{ scaleY: 1.1 }}
           whileFocus={{ scaleY: 1.1 }}
           whileTap={{ scaleY: 0.9 }}
+          onClick={() => setOpen(!open)}
           className='md:hidden border-b border-zinc-400 min-w-full pb-2 text-xl'>
           <Link href={CONTACT_BTN.url} className='text-stone-500 hover:text-stone-800 hover:scale-110 font-normal' >
             {CONTACT_BTN.title}
