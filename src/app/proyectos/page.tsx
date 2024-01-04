@@ -1,5 +1,12 @@
 import { Header } from "@/components/Home/Header"
 import RecentProjectsList from "@/components/Home/RecentProjectsList"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Proyectos',
+  description: 'Aquí encontrarás mis proyectos personales y para clientes que hayan permitido su publicación en mi web  personal. Las tecnologías utilizadas en cada proyecto se encuentran disponibles en cada proyecto, junto a un enlace a su código y demo si está disponible.'
+}
+
 
 const ProyectosPage = async () => {
 

@@ -3,8 +3,14 @@ import { SOCIAL_MEDIA } from '@/constants/Navbar';
 import Link from 'next/link';
 import { Header } from '@/components/Home/Header';
 import { Experience } from '@/constants/Experience';
-import { motion } from 'framer-motion';
 import { ExperienceCard } from '@/components/Home/Experience';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre mi',
+  description: 'Bienvenido/a aquí podrás encontrar información sobre mí y mis proyectos, así también puedes contactarme mediante el formulario disponible en esta misma página o directamente a través de mis redes sociales.'
+}
+
 
 const AboutMePage = () => {
   return (
