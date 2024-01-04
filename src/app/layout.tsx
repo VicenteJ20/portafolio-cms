@@ -3,6 +3,7 @@ import { Fira_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
 import { NavbarWrapper } from '../components/Navbar/Wrapper'
+import { FooterComponent } from '@/components/Footer/Footer'
 
 const FiraSans = Fira_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
@@ -36,6 +37,7 @@ export default function RootLayout({
             {children}
           </section>
         </main>
+        <FooterComponent />
       </body>
     </html>
   )
