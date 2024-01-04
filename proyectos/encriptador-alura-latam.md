@@ -3,14 +3,14 @@ title: Encriptador Alura Latam
 publishedAt: 2022-10-28
 author: Vicente Jorquera,
 description: Este es un encriptador básico desarrollado por Vicente Jorquera como desafío propuesto por alura latam en conjunto con Oracle One.
-coverImage: https://www.vicentejorquera.dev/_next/image?url=%2Fprojects%2Fthumbnails%2Fencriptador-mockup.webp&w=1200&q=75
+coverImage: https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/encriptador-mockup.webp
 ---
 # Desafío 01, Encriptador de texto (básico) - Alura Latam
 
 - Vicente Jorquera
 - 2022-03-20
 
-![HOME HERO IMAGE](https://www.vicentejorquera.dev/_next/image?url=%2Fprojects%2Fthumbnails%2Fencriptador-mockup.webp&w=1200&q=75)
+![HOME HERO IMAGE](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/encriptador-mockup.webp)
 
 
 ##### Bienvenido/a a este proyecto, el cual fue desarrollado como parte de la serie de desafíos propuestos por Alura Latam en conjunto con Oracle One, en el cual se propone crear un encriptador de texto básico, el cual encripta y desencripta un texto ingresado por el usuario, utilizando un algoritmo de encriptación en sustitución simple realizado por el equipo de Alura Latam.
@@ -52,7 +52,7 @@ En este proyecto, algunos de los requesitos necesarios son:
 
 ## Galería de imágenes
 
-- ![Tema claro INICIO](https://www.vicentejorquera.dev/images/lightthemeencriptador.webp)
-- ![Tema oscuro INICIO](https://www.vicentejorquera.dev/images/darthemeencriptador.webp)
-- ![Desencriptado](https://www.vicentejorquera.dev/images/examplealgoritmencriptador.webp)
-- ![Encriptado](https://www.vicentejorquera.dev/images/examplealgoritmencriptador2.webp)
+- ![Tema claro INICIO](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/lightthemeencriptador.webp)
+- ![Tema oscuro INICIO](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/darthemeencriptador.webp)
+- ![Desencriptado](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/examplealgoritmencriptador.webp)
+- ![Encriptado](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/examplealgoritmencriptador2.webp)
