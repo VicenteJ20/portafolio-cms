@@ -1,4 +1,10 @@
 import { FormikForm } from "@/components/Contacto/Contacto"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Contacto',
+  description: 'Binvenido/a a mi página de contacto, aquí podrás contactarme si quieres que trabajemos juntos, puedes utilizar el formulario y/o los enlaces a mis redes sociales.'
+}
 
 const ContactoPage = () => {
   return (

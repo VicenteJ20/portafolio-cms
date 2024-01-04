@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Fira_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
 import { NavbarWrapper } from '../components/Navbar/Wrapper'
 import { FooterComponent } from '@/components/Footer/Footer'
-
-const FiraSans = Fira_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 const Vercetti = localFont({
   src: '/fonts/Vercetti-Regular.ttf',
@@ -15,12 +12,28 @@ const Vercetti = localFont({
 export const metadata: Metadata = {
   title: {
     default: 'Vicente Jorquera',
-    template: `%s | Vicente Jorquera`,
+    template: `%s - Vicente Jorquera`,
   },
   description: 'Bienvenido/a a mi web, aquí podrás encontrar información sobre mí y mis proyectos, así también puedes mantenerte al tanto de mis nuevos proyectos y contactarme para trabajar juntos.',
   keywords: [
     'Vicente Jorquera', 'Vicente', 'Jorquera', 'Desarrollador', 'Programador', 'Programador Curicó', 'Curicó', 'INACAP', 'Ingeniero en Informática en Curicó', 'Analista Programador', 'Analista', 'Soluciones web', 'TI', 'Ingeniero de TI', 'Computer Science', 'PYME', 'Developer', 'Developer Curicó', 'Freelancer', 'Freelance', 'Freelance Curicó', 'Molina', 'Lontué', 'Desarrollador Lontué', 'Ingeniero en Informática Chile', 'Chile', 'Ingeniero en Informática Molina', 'Ingeniero en Informática'
-  ]
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'es_CL',
+    url: 'https://www.vicentejorquera.dev',
+    siteName: 'Vicente Jorquera',
+    title: 'Vicente Jorquera',
+    description: 'Bienvenido/a a mi web, aquí podrás encontrar información sobre mí y mis proyectos, así también puedes mantenerte al tanto de mis nuevos proyectos y contactarme para trabajar juntos.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Vicente Jorquera'
+      }
+    ]
+  }
 }
 
 export default function RootLayout({
