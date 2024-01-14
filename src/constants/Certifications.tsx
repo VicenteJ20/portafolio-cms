@@ -4,7 +4,7 @@ const CERTIFICATIONS = [
     address: 'Online',
     position: 'Introducción a Github Copilot',
     period: 'Enero 2024',
-    description: 'Introducción a Github Copilot para el desarrollo de software y mantenimiento del mismo utilizando la IA para autocompletar código y así mejorar la productividad mejorando la experiencia del desarrollador.',
+    description: 'Introducción a Github Copilot y su uso en proyectos de código abierto y agilidad de escritura del código.',
     url: 'https://www.codecademy.com/profiles/jvicente20/certificates/d70f9e7eb3a7427b8fa1718637a0d07c',
   },
   {

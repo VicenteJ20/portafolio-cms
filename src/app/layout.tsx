@@ -16,6 +16,108 @@ export const metadata: Metadata = {
   creator: 'Vicente Jorquera',
   publisher: 'Vicente Jorquera',
   applicationName: 'Web personal de Vicente Jorquera',
+  icons: [
+    {
+      url: '/favicon-16x16.png',
+      sizes: '16x16',
+      type: 'image/png',
+    },
+    {
+      url: '/favicon-32x32.png',
+      sizes: '32x32',
+      type: 'image/png',
+    },
+    {
+      url: '/favicon-48x48.png',
+      sizes: '48x48',
+      type: 'image/png',
+    },
+    {
+      url: '/apple-icon-57x57.png',
+      sizes: '57x57',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-60x60.png',
+      sizes: '60x60',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-72x72.png',
+      sizes: '72x72',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-76x76.png',
+      sizes: '76x76',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-114x114.png',
+      sizes: '114x114',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-120x120.png',
+      sizes: '120x120',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-144x144.png',
+      sizes: '144x144',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-152x152.png',
+      sizes: '152x152',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-180x180.png',
+      sizes: '180x180',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/apple-icon-precomposed.png',
+      sizes: '192x192',
+      type: 'apple-touch-icon-precomposed',
+    },
+    {
+      url: '/apple-icon.png',
+      sizes: '192x192',
+      type: 'apple-touch-icon',
+    },
+    {
+      url: '/android-icon-192x192.png',
+      sizes: '192x192',
+      type: 'android-icon',
+    },
+    {
+      url: '/android-icon-144x144.png',
+      sizes: '144x144',
+      type: 'android-icon',
+    },
+    {
+      url: '/android-icon-96x96.png',
+      sizes: '96x96',
+      type: 'android-icon',
+    },
+    {
+      url: '/android-icon-72x72.png',
+      sizes: '72x72',
+      type: 'android-icon',
+    },
+    {
+      url: '/android-icon-48x48.png',
+      sizes: '48x48',
+      type: 'android-icon',
+    },
+    {
+      url: '/android-icon-36x36.png',
+      sizes: '36x36',
+      type: 'android-icon',
+    }
+  ],
   title: {
     default: 'Vicente Jorquera',
     template: `%s - Vicente Jorquera`,
@@ -54,6 +156,8 @@ export const metadata: Metadata = {
     creator: '@jvicente_20',
     images: {
       url: '/og-image.png',
+      width: 800,
+      height: 600,
       alt: 'Vicente Jorquera brand logo'
     },
     app: {
