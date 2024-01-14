@@ -5,10 +5,12 @@ import { Header } from '@/components/Home/Header';
 import { Experience } from '@/constants/Experience';
 import { ExperienceCard } from '@/components/Home/Experience';
 import { Metadata } from 'next';
+import { EDUCATION } from '@/constants/Education';
+import { CERTIFICATIONS } from '@/constants/Certifications';
 
 export const metadata: Metadata = {
   title: 'Sobre mi',
-  description: 'Bienvenido/a aquí podrás encontrar información sobre mí y mis proyectos, así también puedes contactarme mediante el formulario disponible en esta misma página o directamente a través de mis redes sociales.'
+  description: 'Bienvenido/a aquí podrás encontrar información sobre mí, mis certificaciones, mi experiencia y mis proyectos, así también puedes contactarme mediante el formulario disponible en esta misma página o directamente a través de mis redes sociales.',
 }
 
 
@@ -36,13 +38,29 @@ const AboutMePage = () => {
           Soy un desarrollador full stack con experiencia en el desarrollo de soluciones web con TypeScript, NextJS 14 y prácticas SEO para mejorar el posicionamiento en buscadores. También cuento con conocimientos en la nube de AWS, siendo así que este misma web aloja sus imágenes en S3, como agregado me encuentro estudiando la certificación de AWS Cloud Partitioner para posteriormente este año, rendir el examen y obtener la certificación para así poder seguir creciendo y obtener la certificación de Solutions Architect y con esto mejorar la calidad y escalibilidad de los proyectos que desarrollo para mi y mis clientes.
         </p>
       </header>
-      <Header overtitle='' title='Experiencia' description='' />
+      <Header overtitle='' title='Experiencia Profesional' description='' />
       {
         Experience.map((experience, index) => (
           <ExperienceCard experience={experience} key={index} />
         ))
       }
-    </section >
+      <Header overtitle='' title='Educación' description='' />
+      <div className='flex flex-col gap-4'>
+        {
+          EDUCATION.map((experience, index) => (
+            <ExperienceCard experience={experience} key={index} />
+          ))
+        }
+      </div>
+      <Header overtitle='' title='Certificaciones' description='' />
+      <div className='flex flex-col gap-4'>
+        {
+          CERTIFICATIONS.map((experience, index) => (
+            <ExperienceCard experience={experience} key={index} />
+          ))
+        }
+      </div>
+    </section>
   );
 }
 

@@ -2,7 +2,7 @@
 title: Sistema de administración de estacionamientos - Smart parking
 publishedAt: 2024-01-03
 author: Vicente Jorquera
-description: Este proyecto fue desarrollado por Vicente Jorquera durante sus inicios en el desarrollo de software como parte de la ruta disponible en FrontendMentor
+description: Este es un proyecto que forma parte de los requisitos formativos de INACAP para obtener el título de Ingeniero en informática, en sí este proyecto es un estacionamiento inteligente que utiliza IOT y servicios cloud junto a programación de servidores locales y cloud.
 coverImage: https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 

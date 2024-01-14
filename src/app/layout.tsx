@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 import { NavbarWrapper } from '../components/Navbar/Wrapper'
 import { FooterComponent } from '@/components/Footer/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 const Vercetti = localFont({
   src: '/fonts/Vercetti-Regular.ttf',
@@ -10,6 +11,11 @@ const Vercetti = localFont({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.vicentejorquera.dev/'),
+  authors: [{ name: 'Vicente Jorquera', url: 'https://www.vicentejorquera.dev'}],
+  creator: 'Vicente Jorquera',
+  publisher: 'Vicente Jorquera',
+  applicationName: 'Web personal de Vicente Jorquera',
   title: {
     default: 'Vicente Jorquera',
     template: `%s - Vicente Jorquera`,
@@ -30,10 +36,44 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Vicente Jorquera'
+        alt: 'Vicente Jorquera brand logo'
+      },
+      {
+        url: '/og-image.png',
+        width: 800,
+        height: 600,
+        alt: 'Vicente Jorquera brand logo'
       }
-    ]
-  }
+    ],
+
+  },
+  twitter: {
+    card: 'app',
+    title: 'Vicente Jorquera',
+    description: 'Bienvenido/a a mi web, aquí podrás encontrar información sobre mí y mis proyectos, así también puedes mantenerte al tanto de mis nuevos proyectos y contactarme para trabajar juntos.',
+    creator: '@jvicente_20',
+    images: {
+      url: '/og-image.png',
+      alt: 'Vicente Jorquera brand logo'
+    },
+    app: {
+      name: 'Vicente_Jorquera',
+      id: {
+        iphone: 'Vicente_Jorquera://iphone',
+        ipad: 'Vicente_Jorquera://ipad',
+        googleplay: 'Vicente_Jorquera://googleplay'
+      },
+    }
+  },
+  verification: {
+    google: 'google',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['jorquerav029@protonmail.com', 'https://www.vicentejorquera.dev'],
+    }
+  },
+
 }
 
 export default function RootLayout({
@@ -48,6 +88,7 @@ export default function RootLayout({
         <main>
           <section>
             {children}
+            <Analytics />
           </section>
         </main>
         <FooterComponent />

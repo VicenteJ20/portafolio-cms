@@ -34,7 +34,7 @@ const MobileNav = ({ open, setOpen }: { open: boolean, setOpen: any }) => {
               className='border-b border-zinc-400 w-full pb-2 text-xl'
               onClick={() => setOpen(!open)}
             >
-              <Link href={item.url} className='text-stone-500 hover:text-stone-800 hover:scale-110 font-normal'>
+              <Link href={item.url} className='text-stone-500 hover:text-stone-800 block w-full font-normal min-w-full'>
                 {item.title}
               </Link>
             </motion.li>
@@ -45,8 +45,8 @@ const MobileNav = ({ open, setOpen }: { open: boolean, setOpen: any }) => {
           whileFocus={{ scaleY: 1.1 }}
           whileTap={{ scaleY: 0.9 }}
           onClick={() => setOpen(!open)}
-          className='md:hidden border-b border-zinc-400 min-w-full pb-2 text-xl'>
-          <Link href={CONTACT_BTN.url} className='text-stone-500 hover:text-stone-800 hover:scale-110 font-normal' >
+          className='md:hidden border-b border-zinc-400 min-w-full  text-xl relative'>
+          <Link href={CONTACT_BTN.url} className='block text-stone-500 w-full pb-2 hover:text-stone-800 font-normal '>
             {CONTACT_BTN.title}
           </Link>
         </motion.li>
@@ -80,7 +80,7 @@ const MobileNav = ({ open, setOpen }: { open: boolean, setOpen: any }) => {
                 onClick={() => setOpen(!open)}
               >
                 <Link
-                  href={item.href} className={`text-stone-500 flex flex-row gap-4 items-center font-normal hover:text-[${item.highlight_color}]`} target='_blank'>
+                  href={item.href} className={`text-stone-500 flex flex-row gap-4 items-center min-w-full font-normal hover:text-[${item.highlight_color}]`} target='_blank'>
                   {item.icon}
                   {item.title}
                 </Link>
