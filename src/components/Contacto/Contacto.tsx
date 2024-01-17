@@ -1,11 +1,14 @@
 'use client'
 
+import { SOCIAL_MEDIA } from "@/constants/Navbar"
 import { contactSchema } from "@/schemas/contact"
 import { Formik, Form, Field, ErrorMessage } from "formik"
+import Link from "next/link"
 import { useState, useEffect } from "react"
 
 const FormikForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [status, setStatus] = useState() as any
 
   useEffect(() => {
     if (isSubmitting) {
@@ -24,13 +27,13 @@ const FormikForm = () => {
         },
         body: JSON.stringify(values)
       })
-      const data = await response.json()
-      console.log(data)
+      setStatus(response.status)
       resetForm()
       setSubmitting(false)
       setIsSubmitting(true)
     } catch (error) {
       console.log(error)
+      setStatus(500)
     }
   }
 
@@ -38,10 +41,30 @@ const FormikForm = () => {
     <>
       {
         isSubmitting ? (
-          <div className='flex flex-col gap-4'>
-            <h3 className='text-lime-600 font-medium text-lg'>¡Gracias por contactarme!</h3>
-            <p className='text-slate-600 text-lg'>Me pondré en contacto contigo lo antes posible. A contuación serás redirigido en unos segundos al inicio.</p>
-          </div>
+          <>
+            {
+              status && status === 200 ? (
+                <div className='flex flex-col gap-4'>
+                  <h3 className='text-lime-600 font-medium text-lg'>¡Gracias por contactarme!</h3>
+                  <p className='text-slate-600 text-lg'>Me pondré en contacto contigo lo antes posible. A contuación serás redirigido en unos segundos al inicio.</p>
+                </div>
+              ) : (
+                <div className='flex flex-col gap-4'>
+                  <h3 className='text-lime-600 font-medium text-lg'>¡Ooops! ha ocurrido un error.</h3>
+                  <p className='text-slate-600 text-lg'>Lamento las molestia, por favor intenta contactarme a través de redes mis redes sociales.</p>
+                  <ul className='flex flex-row gap-2 text-center items-center'>
+                    {
+                      SOCIAL_MEDIA.map((social, index) => (
+                        <li key={index}>
+                          <Link href={social.href} title={`ir a ${social.title}`} target='_blank' className='text-lg text-zinc-700'>{social.icon}</Link>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              )
+            }
+          </>
         ) : (
 
 
