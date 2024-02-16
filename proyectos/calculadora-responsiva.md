@@ -3,7 +3,7 @@ title: Calculadora responsiva básica
 publishedAt: 2022-03-20
 author: Vicente Jorquera
 description: Este proyecto fue desarrollado por Vicente Jorquera durante sus inicios en el desarrollo de software como parte de la ruta disponible en FrontendMentor
-coverImage: https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/calculadora-aritmetica/calculadora-mockup.webp
+coverImage: https://vicentejorquera.s3.amazonaws.com/calculadora-aritmetica/calculadora-mockup.webp
 ---
 
 # Aplicación web - Calculadora aritmética con soporte para temas
@@ -11,7 +11,7 @@ coverImage: https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/calc
 - Vicente Jorquera
 - 2022-03-20
 
-![HOME IMAGE](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/calculadora-aritmetica/calculadora-mockup.webp)
+![HOME IMAGE](https://vicentejorquera.s3.amazonaws.com/calculadora-aritmetica/calculadora-mockup.webp)
 
 ##### Esta app consiste en una aplicación web que desarrollé cuando estaba comenzando a aprender desarrollo web con frameworks de javascript. En este caso escogí Bootstrap y ViteJS, el proyecto tiene como objetivo realizar operaciones de aritmética básica, además de adaptarse a pantallas pequeñas y grandes. Por último, también cuenta con una opción en modo switch que permite al usuario cambiar entre 3 temas diferentes.
 
@@ -38,6 +38,6 @@ Como mencioné anteriormente, FrontendMentor permite utilizar cualquier tecnolog
 
 ## Galería de Imágenes
 
-- ![Desktop tema principal](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/calculadora-aritmetica/darkthemecalc.webp)
-- ![Desktop tema secundario](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/calculadora-aritmetica/lighttheme.webp)
-- ![Desktop tema terciario](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/calculadora-aritmetica/purpletheme.png)
+- ![Desktop tema principal](https://vicentejorquera.s3.amazonaws.com/calculadora-aritmetica/darkthemecalc.webp)
+- ![Desktop tema secundario](https://vicentejorquera.s3.amazonaws.com/calculadora-aritmetica/lighttheme.webp)
+- ![Desktop tema terciario](https://vicentejorquera.s3.amazonaws.com/calculadora-aritmetica/purpletheme.png)

@@ -3,25 +3,25 @@ title: Encriptador Alura Latam
 publishedAt: 2022-10-28
 author: Vicente Jorquera,
 description: Este es un encriptador básico desarrollado por Vicente Jorquera como desafío propuesto por alura latam en conjunto con Oracle One.
-coverImage: https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/encriptador-mockup.webp
+coverImage: https://vicentejorquera.s3.amazonaws.com/encriptador-alura-latam/encriptador-mockup.webp
 ---
 # Desafío 01, Encriptador de texto (básico) - Alura Latam
 
 - Vicente Jorquera
 - 2022-03-20
 
-![HOME HERO IMAGE](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/encriptador-mockup.webp)
+![HOME HERO IMAGE](https://vicentejorquera.s3.amazonaws.com/encriptador-alura-latam/encriptador-mockup.webp)
 
 
 ##### Bienvenido/a a este proyecto, el cual fue desarrollado como parte de la serie de desafíos propuestos por Alura Latam en conjunto con Oracle One, en el cual se propone crear un encriptador de texto básico, el cual encripta y desencripta un texto ingresado por el usuario, utilizando un algoritmo de encriptación en sustitución simple realizado por el equipo de Alura Latam.
 
-- [Ir a la web](https://jvicente20-calculator-app.netlify.app/)
+- [Ir a la web](https://vicentej20.github.io/encriptador_Alura/)
 - [Ir al repositorio](https://vicentej20.github.io/encriptador_Alura/)
 
 
 ## Requisitos del proyecto
 
-A diferencia de otros proyectos que se encuentran en mi web, el proyecto de encriptador de texto de Alura Latam es un tanto especial. Esto se debe a que en este caso si se requiere un stack de tecnologías en específico y es necesario cumplir con el uso de estas para aprobar el desafío.
+A diferencia de otros que se encuentran en mi web, el proyecto de encriptador de texto de Alura Latam es un tanto especial. Esto se debe a que en este caso si se requiere un stack de tecnologías en específico y es necesario cumplir con el uso de estas para aprobar el desafío.
 
 En este proyecto, algunos de los requesitos necesarios son:
 
@@ -52,7 +52,7 @@ En este proyecto, algunos de los requesitos necesarios son:
 
 ## Galería de imágenes
 
-- ![Tema claro INICIO](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/lightthemeencriptador.webp)
-- ![Tema oscuro INICIO](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/darthemeencriptador.webp)
-- ![Desencriptado](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/examplealgoritmencriptador.webp)
-- ![Encriptado](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/encriptador-alura-latam/examplealgoritmencriptador2.webp)
+- ![Tema claro INICIO](https://vicentejorquera.s3.amazonaws.com/encriptador-alura-latam/lightthemeencriptador.webp)
+- ![Tema oscuro INICIO](https://vicentejorquera.s3.amazonaws.com/encriptador-alura-latam/darthemeencriptador.webp)
+- ![Desencriptado](https://vicentejorquera.s3.amazonaws.com/encriptador-alura-latam/examplealgoritmencriptador.webp)
+- ![Encriptado](https://vicentejorquera.s3.amazonaws.com/encriptador-alura-latam/examplealgoritmencriptador2.webp)

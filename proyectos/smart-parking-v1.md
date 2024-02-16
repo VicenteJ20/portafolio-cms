@@ -1,9 +1,9 @@
 ---
-title: Sistema de administración de estacionamientos - Smart parking
+title: Smart parking - IoT
 publishedAt: 2024-01-03
 author: Vicente Jorquera
 description: Este es un proyecto que forma parte de los requisitos formativos de INACAP para obtener el título de Ingeniero en informática, en sí este proyecto es un estacionamiento inteligente que utiliza IOT y servicios cloud junto a programación de servidores locales y cloud.
-coverImage: https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+coverImage: https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/miniature-card.webp
 ---
 
 # Sistema de administración y organización de lugares y plazas de estacionamientos - Smart Parking
@@ -11,7 +11,7 @@ coverImage: https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?q=80&w=
 - Vicente Jorquera
 - Enero 03, 2024
 
-![HERO IMAGE](https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![HERO IMAGE](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/home-image-landing.webp)
 
 ##### Este proyecto consiste en el planteamiento, investigación e identificación de carencias en plazas de estacionamiento en la ciudad de Curicó, Chile y posterior desarrollo de una solución de software. Concretamente como grupo de trabajo junto a dos compañeros de universidad, [Matías Lagos](https://www.linkedin.com/in/mat%C3%ADas-lagos-b3b46b234/) y [René Pérez](https://www.google.com/) todos estudiantes de Ingeniería en Informática, utilizamos como lugar de pruebas la sede INACAP Curicó en la cual estudiamos, donde por lo general se provocan embotellamientos debido a la cantidad de lugares de estacionamientos disponibles frente a la demanda actual y el tiempo de respuesta del personal en identificar los lugares disponibles para cada área correspondiente.
 
@@ -33,11 +33,11 @@ La parte final y no menos importante es el uso de la **Raspberry PI**, esta actu
 
 ### Topología de la infraestructura local
 
-![Diagrama de interacción topología local](/proyectos/smart-parking/topologia-local.webp)
+![Diagrama de interacción topología local](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/topologia-local.webp)
 
 ### Topología de la infraestructura cloud
 
-![Diagrama de topología en nube de AWS](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/topologia-cloud.webp)
+![Diagrama de topología en nube de AWS](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/topologia-cloud.webp)
 
 En cuanto a esta topología, debido a los costes de la misma y a lo que la institución nos otorgó para llevar a cabo el proyecto, debimos modificar esta infraestructura, conteniendo las 3 máquinas EC2 en solo una, teniendo así el servidor web de la app cliente y las APIs hosteadas en la misma máquina, eso sí, utilizando una AMI t4g con 2 núcleos y 8gb de RAM que es más que suficiente para la carga de trabajo que se le daría en la demostración.
 
@@ -80,10 +80,10 @@ A continuación, se encuentra una galería de imágenes de la app en funcionamie
 
 ## Galería de imagenes
  
-- ![Landing Page](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/landing-parking.webp)
-- ![Dashboard Login](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/login-parking.webp)
-- ![Dashboard Home](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/dashboard-home.webp)
-- ![Dashboard Lugares](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/dashboard-lugares.webp)
-- ![Dashboard Areas](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/dashboard-areas.webp)
-- ![Dashboard Placas](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/dashboard-placas.webp)
-- ![Dashboard Personal](https://imagenes-portafolio-personal.s3.amazonaws.com/proyectos/smart-parking-v1/dashboard-personal.webp)
+- ![Landing Page](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/landing-parking.webp)
+- ![Dashboard Login](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/login-parking.webp)
+- ![Dashboard Home](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/dashboard-home.webp)
+- ![Dashboard Lugares](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/dashboard-lugares.webp)
+- ![Dashboard Areas](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/dashboard-areas.webp)
+- ![Dashboard Placas](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/dashboard-placas.webp)
+- ![Dashboard Personal](https://vicentejorquera.s3.amazonaws.com/smart-parking-v1/dashboard-personal.webp)

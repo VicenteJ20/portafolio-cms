@@ -14,7 +14,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'imagenes-portafolio-personal.s3.amazonaws.com'
+        hostname: 'vicentejorquera.s3.amazonaws.com'
       }
     ]
   }
