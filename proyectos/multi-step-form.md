@@ -42,7 +42,7 @@ El desafío consiste en construir el proyecto lo más cercano al diseño entrega
 
 ### Solución planteada
 
-Para llevar a cabo la solución de este proyecto, me enfoqué en utilizar React, ya que, es una librería que suelo utilizar para otro tipo de proyectos, razón por la cual, sé que tengo destreza con la misma pero no había desarrollado un proyecto similar como un desafío en internet. En cuanto a qué otras tecnologías utilicé para desarrollar el proyecto, se encuentran las siguientes:
+Para llevar a cabo la solución de este proyecto, me enfoqué en utilizar React, ya que es una librería que suelo utilizar para otro tipo de proyectos, razón por la cual, sé que tengo destreza con la misma pero no había desarrollado un proyecto similar como un desafío en internet. En cuanto a qué otras tecnologías que utilicé para desarrollar el proyecto, se encuentran las siguientes:
 
 - ViteJS
 - TailwindCSS
@@ -58,7 +58,7 @@ Para llevar a cabo la solución de este proyecto, me enfoqué en utilizar React,
 
 #### ViteJS
 
-Para comenzar utilicé **ViteJS** para construir mi proyecto base con React, como bien ya han de saber, en este punto **(15/02/24)** create-react-app ya no se recomienda para inicializar proyectos, en su lugar tenemos herramientas como ViteJS y NextJS. En este caso decidí utilizar Vite, ya que, sabía que la solución debía construir era 100% de frontend, y NextJS (también utilizo bastante) es más recomendable cuando se quiere realizar un proyecto FullStack, que va a utilizar SSR o al menos que sea de mayor tamaño, ya que, al ser un framework incluye bastantes mejoras o características adicionales a lo que sería React puro o con Vite como es mi caso.
+Para comenzar utilicé **ViteJS** para construir mi proyecto base con React, como bien ya han de saber, en este punto **(15/02/24)** create-react-app ya no se recomienda para inicializar proyectos, en su lugar tenemos herramientas como ViteJS y NextJS. En este caso decidí utilizar Vite, ya que sabía que la solución que debía construir era 100% de frontend, y NextJS (también lo utilizo bastante) es más recomendable cuando se quiere realizar un proyecto FullStack, que va a utilizar SSR o al menos que sea de mayor tamaño, ya que al ser un framework incluye bastantes mejoras o características adicionales a lo que sería React puro o con Vite como es mi caso.
 
 #### TailwindCSS
 
@@ -66,7 +66,7 @@ Bueno, una vez inicializado el proyecto me di a la tarea de configurar **Tailwin
 
 #### React Router DOM v6
 
-Debido a que el proyecto solicita hacer un formulario que cuente con diferentes pasos, agregué la librería **React Router DOM v6**, ya que, decidí que una forma rápida y ordenada de completar con este requisito es pensarlo como una solución basada en routing, es decir, definir un layout común con diferentes páginas representando cada uno de los pasos necesarios, a continuación dejo un listado de las rutas utilizadas:
+Debido a que el proyecto solicita hacer un formulario que cuente con diferentes pasos, agregué la librería **React Router DOM v6**,debido a que pensé la solución basada en rutas del navegador. Me explicó, el proyecto cuenta con un layout general, pero cada uno de los pasos necesarios son una ruta de página diferente y esas rutas son las que se listan a continuación:
 
 - /your-info
 - /select-plan
@@ -75,7 +75,7 @@ Debido a que el proyecto solicita hacer un formulario que cuente con diferentes 
 
 #### Redux Toolkit
 
-Como consecuencia de desarrollar una solución basada en diferentes rutas, me vi en la necesidad de compartir el estado entre componentes, algo que como bien sabemos en React es un dolor de cabeza cuando se trata de pasar información a componentes que no son hijos directos del componente padre que los envuelve. Aquí es donde entra **Redux Toolkit**, una popular librería que permite generar una una **Store** (almacén) generalizado donde se guarda la información de todos los **Slices** previamente creados. De esta manera, se permite acceder a esta **Store** desde cualquier componente del lado del cliente, ya sea, para asignar información a los **reducers** en estos slices o para leer información de los mismos, nuevamente desde cualquier componente del lado del cliente. Permitiendo acceder a información interactiva sin la necesidad de pasar propiedades entre componentes padre - hijo directamente y obteniendo como ventaja la posibilidad de acceder a esa información de manera bilateral, es decir, que un hijo pueda modificar la información a la que accede un padre y viceversa.
+Como consecuencia de desarrollar una solución basada en diferentes rutas, me vi en la necesidad de compartir el estado entre componentes, algo que como bien sabemos en React es un dolor de cabeza cuando se trata de pasar información a componentes que no son hijos directos del componente padre que los envuelve. Aquí es donde entra **Redux Toolkit**, una popular librería que permite generar una **Store** (almacén) generalizado donde se guarda la información de todos los **Slices** previamente creados. De esta manera, se permite acceder a esta **Store** desde cualquier componente del lado del cliente, ya sea, para asignar información a los **reducers** en estos slices o para leer información de los mismos, nuevamente desde cualquier componente del lado del cliente. Permitiendo acceder a información interactiva sin la necesidad de pasar propiedades entre componentes padre - hijo directamente y obteniendo como ventaja la posibilidad de acceder a esa información de manera bilateral, es decir, que un hijo pueda modificar la información a la que accede un padre y viceversa.
 
 #### Formik
 
@@ -89,15 +89,15 @@ Formik destaca por ser:
 
 #### Yup
 
-Para llevar a cabo el manejo de errores sin la necesidad de recurrir a la escritura de expresiones regulares complejas, utilicé la librería Yup, la cual en conjunto con formik forman una excelente combinación debido a la facilidad y naturalidad que presenta yup, para crear validaciones y mensajes de error personalizados.
+Para llevar a cabo el manejo de errores sin la necesidad de recurrir a la escritura de expresiones regulares complejas, utilicé la librería Yup, la cual en conjunto con formik forman una excelente combinación debido a la facilidad y naturalidad que presenta yup para crear validaciones y mensajes de error personalizados.
 
 #### Vercel
 
-Como mencioné previamente, utilicé Vercel como servicio para compilar y desplegar mi proyecto, ya que, fácilmente puede ponerse a la escucha de los repositorios de Github a los que se les de acceso, esto en combinación git forman una excelente combinación, ya que basta con un git push a la rama main o la principal que hayas seleccionado en vercel a la escucha, y la herramienta automáticamente compilará el código y te asignará un dominio gratuito, opcionalmente como es mi caso se puede agregar un dominio propio que redireccione al servidor de vercel.
+Como mencioné previamente, utilicé Vercel como servicio para compilar y desplegar mi proyecto, ya que, fácilmente puede ponerse a la escucha de los repositorios de Github a los que se les de acceso, esto en combinación git forman una excelente combinación, ya que basta con un git push a la rama main o la principal que hayas seleccionado en vercel para que escuche, y la herramienta automáticamente compilará el código y te asignará un dominio gratuito, opcionalmente como es mi caso se puede agregar un dominio propio que redireccione al servidor de vercel.
 
 #### Github
 
-Bueno, no hay mucho que decir sobre esta herramienta, ya que es bastante conocida por prácticamente todos los desarrolladores, tanto inicantes como veteranos en este mundo. En lo que respecta a este proyecto, debido a que desarrollé el proyecto por mi cuenta y sin apoyo de terceros, utilicé Github para llevar un control de versiones de mi código más que como una herramienta de colaboración.
+Bueno, no hay mucho que decir sobre esta herramienta, ya que es bastante conocida por prácticamente todos los desarrolladores, tanto iniciantes como veteranos en este mundo. En lo que respecta a este proyecto, debido a que desarrollé el proyecto por mi cuenta y sin apoyo de terceros, utilicé Github para llevar un control de versiones de mi código más que como una herramienta de colaboración.
 
 #### Cloudflare
 
@@ -105,13 +105,13 @@ En mi caso personal escogí Cloudflare como plataforma dedicada para que gestion
 
 ## Conclusiones
 
-A través de este artículo, he presentado y explicado como he desarrollado, implementado y a grandes rasgos mi he entregado mi experiencia con el proyecto. Puedo decir que en general estoy satisfecho con el resultado final de esta primera iteración.
+A través de este artículo, he presentado y explicado como he desarrollado, implementado y a grandes rasgos he entregado mi experiencia con el proyecto. Puedo decir que en general estoy satisfecho con el resultado final de esta primera iteración.
 
 La aplicación es funcional, receptiva y cumple con todos los requisitos del desafío. Descubrí algunas cosas, como utilizar Redux Toolkit en React puro (sobre vite), sin la necesidad de crear providers del lado del cliente, ni tener que preocuparme por estar utilizando client components, cosa que si ocurre en NextJS.
 
 Sin embargo, hay algunas áreas en las que podría mejorar mi solución y probablemente lo haré cuando encuentre el tiempo para hacerlo, estas mejoras son las siguientes:
 
-- Diseño, si bien creo que mi frontned se parece bastante al diseño original, hay algunos puntos que encuentro que tienen diferencias, tales como el padding, o el grosor de la fuente, cosas simpleas que pasé por alto y que puedo corregir dentro de poco.
+- Diseño, si bien creo que mi frontned se parece bastante al diseño original, hay algunos puntos que encuentro que tienen diferencias, tales como el padding, o el grosor de la fuente, cosas simples que pasé por alto y que puedo corregir dentro de poco.
 
 Si también te interesa desarrollar proyectos de frontend o necesitas una idea full stack con enfoque en el frontend, puedes dirigirte a [FrontendMentor](https://www.frontendmentor.io/)
 
