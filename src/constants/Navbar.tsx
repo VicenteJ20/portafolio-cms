@@ -20,6 +20,10 @@ const NAVBAR_PAGES = [
     title: 'Sobre mí',
     url: '/sobre-mi',
   },
+  {
+    title: 'Blog',
+    url: 'https://blog.vicentejorquera.dev'
+  }
   
 ]
 
